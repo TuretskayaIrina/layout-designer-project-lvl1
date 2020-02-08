@@ -1,0 +1,13 @@
+.hat {
+    background-color: white;
+    position: fixed;
+}
+.name {
+    position: absolute;
+    top: 50%;
+}
+.menu {
+    position: absolute;
+    top: 50%;
+}
+
