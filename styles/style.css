@@ -12,14 +12,15 @@ h4,
 h5,
 section,
 nav {
-  border: 1px solid red;
+    border: 1px solid red;
 }
 
 
 /*В целом для страницы*/
 .pages {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 1280px;
+    font-size: 16px;
+    color: #303846;
 }
 /*Шапка*/
 .hat {
@@ -30,10 +31,11 @@ nav {
     justify-content: space-between;
     margin: 0 auto;
     width: 100%;
+    font-weight: bold;
 }
 .logo {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 .logo__img {
     width: 40px;
@@ -41,7 +43,7 @@ nav {
     margin: 0 10px 0 10px;
 }
 .menu {
- margin-right: 30px;
+    margin-right: 17px;
 }
 .menu__options {
     display: flex;
@@ -51,12 +53,57 @@ nav {
 }
 .menu__option {
     padding-right: 10px;
+    text-decoration: none;
+    color: #303846;
 }
-
+.menu__option:hover {
+    transition: .2s;
+    opacity: .5;
+}
 /*Основной контент*/
 .content {
- font-size: 16px;
- color: #303846;
+ padding-top: 50px;
+}
+
+/*banner*/
+.banner {
+    background: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    object-fit: contain;
+    width: 100%;
+    height: 450px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner__logo {
+    height: 180px;
+    width: 180px;
+    margin: auto;
+}
+.title {
+    font-size: 50px;
+    margin: 0 auto;
+}
+.subtitle {
+    margin: auto;
+    font-size: 20px;
+}
+.button {
+    text-decoration: none;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: auto;
+    padding: 15px;
+    font-size: 18px;
+}
+.button:hover {
+    transition: .2s;
+    opacity: .5;
 }
 
 /*Футер*/
