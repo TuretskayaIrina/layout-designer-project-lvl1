@@ -40,7 +40,7 @@ nav {
 .logo__img {
     width: 40px;
     height: 40px;
-    margin: 0 10px 0 10px;
+    margin: auto 10px;
 }
 .menu {
     margin-right: 17px;
@@ -104,6 +104,67 @@ nav {
 .button:hover {
     transition: .2s;
     opacity: .5;
+}
+
+/*Секция преимущества*/
+.advantages {
+    width: 1000px;
+    padding: 70px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 70px;
+    align-items: center;
+}
+.advantage {
+
+}
+.advantage__title {
+    text-align: center;
+    font-size: 30px;
+}
+.advantage__description {
+
+}
+
+
+/*Секция «О ЖК «Лунное море»*/
+
+.about-complex {
+    background-color: #f7f7f7;
+}
+.about-conteiner {
+    width: 1000px;
+    padding: 70px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about {
+    width: 50%;
+}
+.about__title {
+    font-size: 30px;
+}
+.about__tex {
+
+}
+.about-img {
+    width: 350px;
+}
+
+/*Секция «Места для отдыха»*/
+.places {
+    width: 1000px;
+    padding: 70px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.placas-img {
+    width: 350px;
 }
 
 /*Футер*/
