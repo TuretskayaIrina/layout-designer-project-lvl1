@@ -1,20 +1,3 @@
-Границы для проверки разметки
-div,
-img,
-h1,
-h2,
-cite,
-blockquote,
-p,
-a,
-h3,
-h4,
-h5,
-section,
-nav {
-    border: 1px solid red;
-}
-
 
 /*В целом для страницы*/
 .pages {
@@ -116,17 +99,11 @@ nav {
     grid-column-gap: 70px;
     align-items: center;
 }
-.advantage {
 
-}
 .advantage__title {
     text-align: center;
     font-size: 30px;
 }
-.advantage__description {
-
-}
-
 
 /*Секция «О ЖК «Лунное море»*/
 
@@ -147,9 +124,7 @@ nav {
 .about__title {
     font-size: 30px;
 }
-.about__tex {
 
-}
 .about-img {
     width: 350px;
 }
@@ -199,7 +174,7 @@ nav {
     font-weight: bold;
     font-size: 22px;
 }
-.select {
+.legend__select {
     float: right;
     width: 30%;
     margin-right: 35px;
@@ -207,19 +182,19 @@ nav {
     background-color: white;
 
 }
-.input {
+.legend__input {
     border-radius: 5px;
     width: 40%;
     float: right;
     margin-right: 15px;
     height: 20px;
 }
-.bth-submit {
+.bth {
     width: 40%;
     padding: 10px;
     margin: 20px 0 0 0;
 }
-.submit {
+.bth__submit {
     padding: 10px 20px;
     font-size: 20px;
     font-weight: bold;
@@ -227,7 +202,7 @@ nav {
     border-color: lightgreen;
     border-radius: 10px;
 }
-.submit:hover {
+.bth__submit:hover {
     transition: .2s;
     opacity: .5;
     cursor: pointer;
@@ -235,5 +210,29 @@ nav {
 
 /*Футер*/
 .footer {
+ background-color:  #303846;
+}
+.footer-conteiner {
+    width: 1000px;
+    padding: 70px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
 
+.logo__img_footer {
+    margin-left: 0;
+}
+
+.document__element:hover{
+    transition: .2s;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.info__element:hover {
+    transition: .2s;
+    opacity: .5;
+    cursor: pointer;
 }

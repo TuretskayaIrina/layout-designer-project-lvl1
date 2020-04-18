@@ -75,39 +75,39 @@
                         <fieldset class="form">
                             <legend class="legend">Параметры квартиры</legend>
                             <p>
-                                <label>Количество комнат:</label>
-                                <select class="select">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
+                                <label class="legend__label">Количество комнат:</label>
+                                <select class="legend__select">
+                                    <option class="legend__select_option">1</option>
+                                    <option class="legend__select_option">2</option>
+                                    <option class="legend__select_option">3</option>
                                 </select>
                             </p>
                             <p>
-                                <label>Отделка:</label>
-                                <select class="select">
-                                    <option>Чистовая</option>
-                                    <option>Предчистовая</option>
-                                    <option>Черновая</option>
+                                <label class="legend__label">Отделка:</label>
+                                <select class="legend__select">
+                                    <option class="legend__select_option">Чистовая</option>
+                                    <option class="legend__select_option">Предчистовая</option>
+                                    <option class="legend__select_option">Черновая</option>
                                 </select>
                             </p>
                         </fieldset>
                         <fieldset class="form">
                             <legend class="legend">Контактная информация</legend>
                             <p>
-                                <label>Имя:</label>
-                                <input class="input" type="text">
+                                <label class="legend__label">Имя:</label>
+                                <input class="legend__input" type="text">
                             </p>
                             <p>
-                                <label>Телефон:</label>
-                                <input class="input" type="tel">
+                                <label class="legend__label">Телефон:</label>
+                                <input class="legend__input" type="tel">
                             </p>
                             <p>
-                                <label>E-mail:</label>
-                                <input class="input" type="email">
+                                <label class="legend__label">E-mail:</label>
+                                <input class="legend__input" type="email">
                             </p>
                         </fieldset>
-                        <p class="bth-submit">
-                            <input class="submit" type="submit" value="Отправить">
+                        <p class="bth">
+                            <input class="bth__submit" type="submit" value="Отправить">
                         </p>
                     </form>
                 </div>
@@ -116,5 +116,29 @@
     </div>
 </body>
 <!--Футер-->
-<footer class="footer">Футер</footer>
+<footer class="footer">
+    <div class="footer-conteiner">
+        <div class="logo-conteiner">
+            <div class="logo">
+                <img class="logo__img logo__img_footer" src="./images/logo.svg" alt="фазы луны">
+                <p class="logo__name">Лунное море</p>
+            </div>
+            <p class="logo-conteiner__copyright">© 2020. Яковлева Ирина</p>
+        </div>
+        <div class="documents">
+            <h3 class="documents__title">Проектная документация</h3>
+            <ul class="document">
+                <li><a class="document__element" target="_blank">Скачать</a></li>
+                <li><a class="document__element">Посмотреть на сайте</a></li>
+            </ul>
+        </div>
+        <div class="info-conteiner">
+            <h3 class="info-conteiner__title">О застройщике</h3>
+            <ul class="info">
+                <li><a class="info__element" target="_blank">Отзывы</a></li>
+                <li><a class="info__element" target="_blank">Сайт компании</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </html>
