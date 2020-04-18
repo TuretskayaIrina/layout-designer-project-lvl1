@@ -1,11 +1,11 @@
 
-/*В целом для страницы*/
+
 .pages {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #303846;
 }
-/*Шапка*/
+
 .hat {
     position: fixed;
     background-color: white;
@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: row;
 }
-.logo__img {
+.logo-img {
     width: 40px;
     height: 40px;
     margin: auto 10px;
@@ -28,27 +28,26 @@
 .menu {
     margin-right: 17px;
 }
-.menu__options {
+.menu-options {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     padding: 0;
 }
-.menu__option {
+.menu-option {
     padding-right: 10px;
     text-decoration: none;
     color: #303846;
 }
-.menu__option:hover {
+.menu-option:hover {
     transition: .2s;
     opacity: .5;
 }
-/*Основной контент*/
+
 .content {
  padding-top: 50px;
 }
 
-/*banner*/
 .banner {
     background: url(../images/banner.png);
     background-repeat: no-repeat;
@@ -62,7 +61,7 @@
     flex-direction: column;
     align-items: center;
 }
-.banner__logo {
+.banner-logo {
     height: 180px;
     width: 180px;
     margin: auto;
@@ -89,7 +88,6 @@
     opacity: .5;
 }
 
-/*Секция преимущества*/
 .advantages {
     width: 1000px;
     padding: 70px 0;
@@ -100,19 +98,19 @@
     align-items: center;
 }
 
-.advantage__title {
+.block-title {
     text-align: center;
     font-size: 30px;
 }
 
-/*Секция «О ЖК «Лунное море»*/
-
 .about-complex {
     background-color: #f7f7f7;
 }
-.about-conteiner {
+.width-content {
     width: 1000px;
     padding: 70px 0;
+}
+.flex-space-between {
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -121,28 +119,9 @@
 .about {
     width: 50%;
 }
-.about__title {
-    font-size: 30px;
-}
-
-.about-img {
+.content-img {
     width: 350px;
 }
-
-/*Секция «Места для отдыха»*/
-.places {
-    width: 1000px;
-    padding: 70px 0;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.placas-img {
-    width: 350px;
-}
-
-/*Секция форма*/
 
 .forms {
     background-color: #f7f7f7;
@@ -150,14 +129,7 @@
     flex-direction: column;
     align-items: center;
 }
-.forms-area {
-    width: 1000px;
-    padding: 70px 0;
-}
-.forms-area__title {
-    font-size: 30px;
-    text-align: center;
-}
+
 .booking {
     width: 100%;
     display: flex;
@@ -174,7 +146,7 @@
     font-weight: bold;
     font-size: 22px;
 }
-.legend__select {
+.legend-select {
     float: right;
     width: 30%;
     margin-right: 35px;
@@ -182,7 +154,7 @@
     background-color: white;
 
 }
-.legend__input {
+.legend-input {
     border-radius: 5px;
     width: 40%;
     float: right;
@@ -194,7 +166,7 @@
     padding: 10px;
     margin: 20px 0 0 0;
 }
-.bth__submit {
+.bth-submit {
     padding: 10px 20px;
     font-size: 20px;
     font-weight: bold;
@@ -202,36 +174,33 @@
     border-color: lightgreen;
     border-radius: 10px;
 }
-.bth__submit:hover {
+.bth-submit:hover {
     transition: .2s;
     opacity: .5;
     cursor: pointer;
 }
 
-/*Футер*/
 .footer {
  background-color:  #303846;
 }
 .footer-conteiner {
-    width: 1000px;
-    padding: 70px 0;
     color: white;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
 
-.logo__img_footer {
+.logo-img-footer {
     margin-left: 0;
 }
 
-.document__element:hover{
+.document-element:hover{
     transition: .2s;
     opacity: .5;
     cursor: pointer;
 }
 
-.info__element:hover {
+.info-element:hover {
     transition: .2s;
     opacity: .5;
     cursor: pointer;
