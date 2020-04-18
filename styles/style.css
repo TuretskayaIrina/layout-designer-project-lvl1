@@ -194,12 +194,20 @@
     margin-left: 0;
 }
 
+.document-element{
+    text-decoration: none;
+    color: white;
+}
 .document-element:hover{
     transition: .2s;
     opacity: .5;
     cursor: pointer;
 }
 
+.info-element {
+    text-decoration: none;
+    color: white;
+}
 .info-element:hover {
     transition: .2s;
     opacity: .5;
