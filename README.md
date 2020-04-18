@@ -11,4 +11,4 @@ ___
 
 **Deploy**
 
-* [Ссылка на готовый проект](YakovlevaIrina-layout-designer-project-lvl1.surge.sh)
+* [Ссылка на готовый проект](http://yakovlevairina-layout-designer-project-lvl1.surge.sh/)
