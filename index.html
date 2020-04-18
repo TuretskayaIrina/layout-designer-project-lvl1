@@ -30,7 +30,7 @@
                 <img class="banner__logo" src="./images/logo.svg" alt="фазы луны">
                 <h1 class="title">ЖК «Лунное море»</h1>
                 <p class="subtitle">Место, откуда не хочется улетать</p>
-                <a class="button" href="#">Забронировать</a>
+                <a class="button" href="#booking">Забронировать</a>
             </section>
             <!--Секция преимущества-->
             <section class="advantages">
@@ -65,6 +65,51 @@
                     <h2 class="about__title">Места для отдыха</h2>
                     <p class="about__tex">Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
                     <p class="about__tex">Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
+                </div>
+            </section>
+            <!--Секция форма-->
+            <section class="forms">
+                <div class="forms-area">
+                    <h2 class="forms-area__title">Оставьте заявку сегодня!</h2>
+                    <form id="booking" class="booking">
+                        <fieldset class="form">
+                            <legend class="legend">Параметры квартиры</legend>
+                            <p>
+                                <label>Количество комнат:</label>
+                                <select class="select">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label>Отделка:</label>
+                                <select class="select">
+                                    <option>Чистовая</option>
+                                    <option>Предчистовая</option>
+                                    <option>Черновая</option>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <fieldset class="form">
+                            <legend class="legend">Контактная информация</legend>
+                            <p>
+                                <label>Имя:</label>
+                                <input class="input" type="text">
+                            </p>
+                            <p>
+                                <label>Телефон:</label>
+                                <input class="input" type="tel">
+                            </p>
+                            <p>
+                                <label>E-mail:</label>
+                                <input class="input" type="email">
+                            </p>
+                        </fieldset>
+                        <p class="bth-submit">
+                            <input class="submit" type="submit" value="Отправить">
+                        </p>
+                    </form>
                 </div>
             </section>
         </div>
