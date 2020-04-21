@@ -1,18 +1,19 @@
 
 
-.pages {
+.body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #303846;
 }
 
-.hat {
+.header {
     position: fixed;
     background-color: white;
-    height: 50px;
     display: flex;
+    top: 0;
+    left: 0;
     justify-content: space-between;
-    margin: 0 auto;
+    padding: 0 17px 0 10px;
     width: 100%;
     font-weight: bold;
 }
@@ -23,19 +24,17 @@
 .logo-img {
     width: 40px;
     height: 40px;
-    margin: auto 10px;
+    margin: auto 10px auto 0;
 }
-.menu {
-    margin-right: 17px;
-}
+
 .menu-options {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    padding: 0;
+    padding: 0 17px;
 }
 .menu-option {
-    padding-right: 10px;
+    margin-right: 10px;
     text-decoration: none;
     color: #303846;
 }
@@ -48,49 +47,60 @@
  padding-top: 50px;
 }
 
-.banner {
+.title-photo {
     background: url(../images/banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     object-fit: contain;
     width: 100%;
-    height: 450px;
     color: white;
+}
+.flex-column-center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.banner-logo {
+.title-photo-logo {
     height: 180px;
     width: 180px;
     margin: auto;
 }
 .title {
     font-size: 50px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .subtitle {
-    margin: auto;
+    margin: 0 auto 45px auto;
     font-size: 20px;
 }
-.button {
-    text-decoration: none;
-    color: white;
+.bth {
     border: 1px solid;
     border-radius: 10px;
-    margin: auto;
-    padding: 15px;
     font-size: 18px;
+    font-weight: bold;
 }
-.button:hover {
+.bth:hover {
     transition: .2s;
     opacity: .5;
+    cursor: pointer;
+}
+.bth-booking {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding: 15px;
+}
+.bth-submit {
+    width: 46%;
+}
+.bth-green {
+    color: green;
+    border-color: lightgreen;
+    padding: 15px 36px;
 }
 
 .advantages {
-    width: 1000px;
-    padding: 70px 0;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -108,9 +118,10 @@
     font-size: 30px;
 }
 
-.about-complex {
+.background-grey {
     background-color: #f7f7f7;
 }
+
 .width-content {
     width: 1000px;
     padding: 70px 0;
@@ -126,20 +137,6 @@
 }
 .content-img {
     width: 350px;
-}
-
-.forms {
-    background-color: #f7f7f7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.booking {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .form {
     width: 43%;
@@ -175,23 +172,7 @@
     height: 25px;
 }
 
-.bth {
-    width: 46%;
-    margin: 20px 0 0 0;
-}
-.bth-submit {
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: green;
-    border-color: lightgreen;
-    border-radius: 10px;
-}
-.bth-submit:hover {
-    transition: .2s;
-    opacity: .5;
-    cursor: pointer;
-}
+
 
 .footer {
  background-color:  #303846;
@@ -202,10 +183,6 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-}
-
-.logo-img-footer {
-    margin-left: 0;
 }
 
 .document-element{

@@ -8,48 +8,51 @@
     <link rel="stylesheet" href="./vendor/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-    <div class="pages">
-        <!--Шапка-->
-        <div class="hat">
+<body class="body">
+    <!--Шапка-->
+    <div class="header">
             <div class="logo">
                 <img class="logo-img" src="./images/logo.svg" alt="фазы луны">
                 <p>Лунное море</p>
             </div>
-            <nav class="menu">
+            <nav>
                 <ul class="menu-options">
                     <li><a class="menu-option" href="#advantages">Приемущества</a></li>
                     <li><a class="menu-option" href="#about-complex">ЖК</a></li>
                     <li><a class="menu-option" href="#places">Места для отдыха</a></li>
                 </ul>
             </nav>
-        </div>
-        <!--Основной контент-->
-        <div class="content">
+    </div>
+    <!--Основной контент-->
+    <div class="content">
             <!--Секция баннер-->
-            <section class="banner">
-                <img class="banner-logo" src="./images/logo.svg" alt="фазы луны">
-                <h1 class="title">ЖК «Лунное море»</h1>
-                <p class="subtitle">Место, откуда не хочется улетать</p>
-                <a class="button" href="#booking">Забронировать</a>
+            <section class="title-photo flex-column-center">
+                <div class="width-content flex-column-center">
+                    <img class="title-photo-logo" src="./images/logo.svg" alt="фазы луны">
+                    <h1 class="title">ЖК «Лунное море»</h1>
+                    <p class="subtitle">Место, откуда не хочется улетать</p>
+                    <a class="bth bth-booking" href="#booking">Забронировать</a>
+                </div>
             </section>
             <!--Секция преимущества-->
-            <section class="advantages" id="advantages">
-                <div>
-                    <h2 class="title-center">Уникальный вид</h2>
-                    <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
-                </div>
-                <div>
-                    <h2 class="title-center">Инфраструктура</h2>
-                    <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
-                </div>
-                <div>
-                    <h2 class="title-center">Близость к Москве</h2>
-                    <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
+            <section id="advantages">
+                <div class="width-content advantages">
+                    <div>
+                        <h2 class="title-left">Уникальный вид</h2>
+                        <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
+                    </div>
+                    <div>
+                        <h2 class="title-left">Инфраструктура</h2>
+                        <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
+                    </div>
+                    <div>
+                        <h2 class="title-left">Близость к Москве</h2>
+                        <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
+                    </div>
                 </div>
             </section>
             <!--Секция «О ЖК «Лунное море»-->
-            <section class="about-complex" id="about-complex">
+            <section class="background-grey" id="about-complex">
                 <div class="flex-space-between width-content">
                     <div class="about">
                         <h2 class="title-left">О ЖК «Лунное море»</h2>
@@ -60,19 +63,21 @@
                 </div>
             </section>
             <!--Секция «Места для отдыха»-->
-            <section class="flex-space-between width-content" id="places">
-                <img class="content-img" src="./images/moon-2.jpg" alt="космонавт">
-                <div class="about">
-                    <h2 class="title-left">Места для отдыха</h2>
-                    <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
-                    <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
+            <section id="places">
+                <div class="flex-space-between width-content">
+                    <img class="content-img" src="./images/moon-2.jpg" alt="космонавт">
+                    <div class="about">
+                        <h2 class="title-left">Места для отдыха</h2>
+                        <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
+                        <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
+                    </div>
                 </div>
             </section>
             <!--Секция форма-->
-            <section class="forms">
+            <section class="flex-column-center background-grey">
                 <div class="width-content">
                     <h2 class="title-center">Оставьте заявку сегодня!</h2>
-                    <form id="booking" class="booking">
+                    <form id="booking" class="flex-column-center">
                         <fieldset class="form">
                             <legend class="legend">Параметры квартиры</legend>
                             <p>
@@ -107,13 +112,12 @@
                                 <input class="input" type="email">
                             </p>
                         </fieldset>
-                        <p class="bth">
-                            <input class="bth-submit" type="submit" value="Отправить">
+                        <p class="bth-submit">
+                            <input class="bth-green bth" type="submit" value="Отправить">
                         </p>
                     </form>
                 </div>
             </section>
-        </div>
     </div>
 </body>
 <!--Футер-->
@@ -121,7 +125,7 @@
     <div class="width-content footer-conteiner">
         <div>
             <div class="logo">
-                <img class="logo-img logo-img-footer" src="./images/logo.svg" alt="фазы луны">
+                <img class="logo-img" src="./images/logo.svg" alt="фазы луны">
                 <p>Лунное море</p>
             </div>
             <p>© 2020. Яковлева Ирина</p>
