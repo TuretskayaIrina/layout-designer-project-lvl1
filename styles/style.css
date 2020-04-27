@@ -1,22 +1,60 @@
-
+:root {
+    --light-color: #ffffff;
+    --neutral-color: #f7f7f7;
+    --dark-color: #303846;
+    --main-font-family: Arial, Helvetica, sans-serif;
+    --main-font-size: 16px;
+}
 
 .body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    color: #303846;
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+    color: var(--dark-color);
 }
+.background-white {
+    background-color: var(--light-color);
+}
+.background-grey {
+    background-color: var(--neutral-color);
+}
+.background-dark {
+    background-color:  var(--dark-color);
+}
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-space-between {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.width-content {
+    width: 1000px;
+    padding: 70px 0;
+}
+.width-30 {
+    width: 30%;
+}
+.width-50 {
+    width: 50%;
+}
+
 
 .header {
     position: fixed;
-    background-color: white;
-    display: flex;
     top: 0;
     left: 0;
-    justify-content: space-between;
     padding: 0 17px 0 10px;
     width: 100%;
     font-weight: bold;
 }
+.content {
+    padding-top: 50px;
+   }
+
+
 .logo {
     display: flex;
     flex-direction: row;
@@ -27,6 +65,7 @@
     margin: auto 10px auto 0;
 }
 
+
 .menu-options {
     display: flex;
     flex-direction: row;
@@ -36,16 +75,13 @@
 .menu-option {
     margin-right: 10px;
     text-decoration: none;
-    color: #303846;
+    color: var(--dark-color);
 }
 .menu-option:hover {
     transition: .2s;
     opacity: .5;
 }
 
-.content {
- padding-top: 50px;
-}
 
 .title-photo {
     background: url(../images/banner.png);
@@ -54,31 +90,44 @@
     background-position: bottom;
     object-fit: contain;
     width: 100%;
-    color: white;
-}
-.flex-column-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: var(--light-color);
 }
 .title-photo-logo {
     height: 180px;
     width: 180px;
     margin: auto;
 }
+
+
+.content-img {
+    width: 350px;
+}
+
+
 .title {
     font-size: 50px;
     margin: 20px auto;
+}
+.title-center {
+    text-align: center;
+    font-size: 30px;
+}
+.title-left {
+    text-align: left;
+    font-size: 30px;
 }
 .subtitle {
     margin: 0 auto 45px auto;
     font-size: 20px;
 }
+
+
 .bth {
     border: 1px solid;
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
+    padding: 15px 36px;
 }
 .bth:hover {
     transition: .2s;
@@ -87,7 +136,7 @@
 }
 .bth-booking {
     text-decoration: none;
-    color: white;
+    color: var(--light-color);
     margin: auto;
     padding: 15px;
 }
@@ -97,47 +146,9 @@
 .bth-green {
     color: green;
     border-color: lightgreen;
-    padding: 15px 36px;
 }
 
-.advantages {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 70px;
-    align-items: center;
-}
 
-.title-center {
-    text-align: center;
-    font-size: 30px;
-}
-
-.title-left {
-    text-align: left;
-    font-size: 30px;
-}
-
-.background-grey {
-    background-color: #f7f7f7;
-}
-
-.width-content {
-    width: 1000px;
-    padding: 70px 0;
-}
-.flex-space-between {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.about {
-    width: 50%;
-}
-.content-img {
-    width: 350px;
-}
 .form {
     width: 43%;
     border-color: lightgreen;
@@ -153,16 +164,13 @@
     line-height: 30px;
     margin: 20px 0;
 }
-
 .legend-select {
     float: right;
     width: 35%;
     margin-right: 55px;
     height: 30px;
-    background-color: white;
     border-radius: 10px;
 }
-
 .input {
     border-radius: 10px;
     width: 45%;
@@ -173,31 +181,22 @@
 }
 
 
-
-.footer {
- background-color:  #303846;
- font-family: serif;
-}
 .footer-conteiner {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+    font-family: serif;
+    color: var(--light-color);
 }
-
 .document-element{
     text-decoration: none;
-    color: white;
+    color: var(--light-color);
 }
 .document-element:hover{
     transition: .2s;
     opacity: .5;
     cursor: pointer;
 }
-
 .info-element {
     text-decoration: none;
-    color: white;
+    color: var(--light-color);
 }
 .info-element:hover {
     transition: .2s;

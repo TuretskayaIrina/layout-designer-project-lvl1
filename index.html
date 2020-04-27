@@ -10,71 +10,71 @@
 </head>
 <body class="body">
     <!--Шапка-->
-    <div class="header">
-            <div class="logo">
-                <img class="logo-img" src="./images/logo.svg" alt="фазы луны">
-                <p>Лунное море</p>
-            </div>
-            <nav>
-                <ul class="menu-options">
-                    <li><a class="menu-option" href="#advantages">Приемущества</a></li>
-                    <li><a class="menu-option" href="#about-complex">ЖК</a></li>
-                    <li><a class="menu-option" href="#places">Места для отдыха</a></li>
-                </ul>
-            </nav>
+    <div class="header flex-space-between background-white">
+        <div class="logo">
+            <img class="logo-img" src="./images/logo.svg" alt="фазы луны">
+            <p>Лунное море</p>
+        </div>
+        <nav>
+            <ul class="menu-options">
+                <li><a class="menu-option" href="#advantages">Приемущества</a></li>
+                <li><a class="menu-option" href="#about-complex">ЖК</a></li>
+                <li><a class="menu-option" href="#places">Места для отдыха</a></li>
+            </ul>
+        </nav>
     </div>
     <!--Основной контент-->
-    <div class="content">
-            <!--Секция баннер-->
-            <section class="title-photo flex-column-center">
-                <div class="width-content flex-column-center">
-                    <img class="title-photo-logo" src="./images/logo.svg" alt="фазы луны">
-                    <h1 class="title">ЖК «Лунное море»</h1>
-                    <p class="subtitle">Место, откуда не хочется улетать</p>
-                    <a class="bth bth-booking" href="#booking">Забронировать</a>
-                </div>
-            </section>
-            <!--Секция преимущества-->
-            <section id="advantages">
-                <div class="width-content advantages">
-                    <div>
+    <main class="content">
+        <!--Секция баннер-->
+        <section class="title-photo flex-column-center">
+            <div class="width-content flex-column-center">
+                <img class="title-photo-logo" src="./images/logo.svg" alt="фазы луны">
+                <h1 class="title">ЖК «Лунное море»</h1>
+                <p class="subtitle">Место, откуда не хочется улетать</p>
+                <a class="bth bth-booking" href="#booking">Забронировать</a>
+            </div>
+        </section>
+        <!--Секция преимущества-->
+        <section id="advantages">
+                <div class="width-content flex-space-between">
+                    <div class="width-30">
                         <h2 class="title-left">Уникальный вид</h2>
                         <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
                     </div>
-                    <div>
+                    <div class="width-30">
                         <h2 class="title-left">Инфраструктура</h2>
                         <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
                     </div>
-                    <div>
+                    <div class="width-30">
                         <h2 class="title-left">Близость к Москве</h2>
                         <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
                     </div>
                 </div>
-            </section>
-            <!--Секция «О ЖК «Лунное море»-->
-            <section class="background-grey" id="about-complex">
+        </section>
+        <!--Секция «О ЖК «Лунное море»-->
+        <section class="background-grey" id="about-complex">
                 <div class="flex-space-between width-content">
-                    <div class="about">
+                    <div class="width-50">
                         <h2 class="title-left">О ЖК «Лунное море»</h2>
                         <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
                         <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
                     </div>
                     <img class="content-img" src="./images/moon-1.jpg" alt="Луна">
                 </div>
-            </section>
-            <!--Секция «Места для отдыха»-->
-            <section id="places">
+        </section>
+        <!--Секция «Места для отдыха»-->
+        <section id="places">
                 <div class="flex-space-between width-content">
                     <img class="content-img" src="./images/moon-2.jpg" alt="космонавт">
-                    <div class="about">
+                    <div class="width-50">
                         <h2 class="title-left">Места для отдыха</h2>
                         <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
                         <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
                     </div>
                 </div>
-            </section>
-            <!--Секция форма-->
-            <section class="flex-column-center background-grey">
+        </section>
+        <!--Секция форма-->
+        <section class="flex-column-center background-grey">
                 <div class="width-content">
                     <h2 class="title-center">Оставьте заявку сегодня!</h2>
                     <form id="booking" class="flex-column-center">
@@ -82,7 +82,7 @@
                             <legend class="legend">Параметры квартиры</legend>
                             <p>
                                 <label class="legend-label">Количество комнат:</label>
-                                <select class="legend-select">
+                                <select class="legend-select background-white">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -90,7 +90,7 @@
                             </p>
                             <p>
                                 <label class="legend-label">Отделка:</label>
-                                <select class="legend-select">
+                                <select class="legend-select background-white">
                                     <option>Чистовая</option>
                                     <option>Предчистовая</option>
                                     <option>Черновая</option>
@@ -117,12 +117,12 @@
                         </p>
                     </form>
                 </div>
-            </section>
-    </div>
+        </section>
+    </main>
 </body>
 <!--Футер-->
-<footer class="footer">
-    <div class="width-content footer-conteiner">
+<footer class="background-dark">
+    <div class="width-content footer-conteiner flex-space-between">
         <div>
             <div class="logo">
                 <img class="logo-img" src="./images/logo.svg" alt="фазы луны">
