@@ -37,7 +37,7 @@ h3 {
     display: flex;
     justify-content: space-between;
 }
-.width-content {
+.container {
     width: 1000px;
     padding: 70px 0;
     margin: 0 auto;
